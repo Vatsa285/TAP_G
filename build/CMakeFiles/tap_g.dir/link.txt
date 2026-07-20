@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tap_g.dir/src/main.cpp.o CMakeFiles/tap_g.dir/src/InputManager.cpp.o CMakeFiles/tap_g.dir/src/GestureDetector.cpp.o CMakeFiles/tap_g.dir/src/CommandDispatcher.cpp.o CMakeFiles/tap_g.dir/src/ConfigManager.cpp.o CMakeFiles/tap_g.dir/src/CommandExecutor.cpp.o -o tap_g  -linput -ludev 
