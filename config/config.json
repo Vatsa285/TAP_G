@@ -1,0 +1,4 @@
+{
+    "FourFingerTap": "xdotool key alt+Tab",
+    "ThreeFingerTap": "playerctl play-pause"
+}
