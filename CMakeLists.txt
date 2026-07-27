@@ -31,3 +31,8 @@ target_link_libraries(tap_g PRIVATE
     ${LIBINPUT_LIBRARIES}
     ${LIBUDEV_LIBRARIES}
 )
+
+install(FILES config/config.json
+        DESTINATION share/tap_g)
+install(TARGETS tap_g
+        RUNTIME DESTINATION bin)
