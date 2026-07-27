@@ -22,7 +22,7 @@ static const libinput_interface interface={
 
 
 
-InputManager::InputManager() : udev_(nullptr), libinput_(nullptr),dispatcher("../config/config.json"){
+InputManager::InputManager() : udev_(nullptr), libinput_(nullptr),dispatcher(){
     initialize();
 }
 

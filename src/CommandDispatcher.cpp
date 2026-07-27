@@ -2,8 +2,8 @@
 
 #include "CommandDispatcher.h"
 
-CommandDispatcher::CommandDispatcher(const std::string& configFile)
-    : config(configFile)
+CommandDispatcher::CommandDispatcher()
+    : config()
 {}
 
 void CommandDispatcher::dispatch(const Gesture& gesture)
@@ -12,7 +12,11 @@ void CommandDispatcher::dispatch(const Gesture& gesture)
 
     if (!command.empty())
     {
-        executor.execute(command);
+        if(!executor.execute(command))
+        {
+            std::cerr << "Failed to execute command for gesture" << std::endl;
+        }
     }
 }
 
+ 

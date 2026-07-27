@@ -9,7 +9,7 @@
 class CommandDispatcher
 {
 public:
-    explicit CommandDispatcher(const std::string& configFile);
+    explicit CommandDispatcher();
 
     void dispatch(const Gesture& gesture);
 

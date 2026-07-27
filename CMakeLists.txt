@@ -27,6 +27,7 @@ target_include_directories(tap_g PRIVATE
 )
 
 target_link_libraries(tap_g PRIVATE
+    nlohmann_json::nlohmann_json
     ${LIBINPUT_LIBRARIES}
     ${LIBUDEV_LIBRARIES}
 )
